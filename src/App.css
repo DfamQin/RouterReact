@@ -1,0 +1,289 @@
+/* Layout Utama */
+.content-area {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.nav-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #61dafb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #61dafb;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 4px;
+}
+
+/* Profile Image */
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #61dafb;
+}
+
+/* Card Interest */
+.page-container {
+  max-width: 650px; 
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.page-container h2 {
+  font-size: 1.8rem;
+  color: #61dafb;
+  margin-bottom: 2rem;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.interest-card {
+  background-color: #161b22; /* Warna latar gelap bergaya dark-mode */
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.interest-card:hover {
+  transform: translateY(-3px);
+  border-color: #58a6ff;
+}
+
+.interest-img {
+  width: 100%;
+  max-height: 280px; /* Menambah tinggi agar gambar screenshot terlihat sangat jelas */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #21262d;
+}
+
+.interest-info {
+  text-align: center;
+}
+
+.interest-info h3 {
+  font-size: 1.2rem;
+  color: #58a6ff;
+  margin-bottom: 0.4rem;
+}
+
+.interest-info p {
+  font-size: 0.95rem;
+  color: #8b949e;
+  line-height: 1.4;
+}
+
+/* Social & Contact */
+/* Styling Kartu Kontak & Social */
+.contact-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.5rem;
+}
+
+/* List Item Contact */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1117;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #21262d;
+}
+
+.contact-label {
+  color: #8b949e;
+  font-size: 0.9rem;
+}
+
+.contact-value {
+  color: #f0f6fc;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Social Buttons Grid */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.social-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  color: #ffffff;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.15);
+}
+
+/* Warna Khas Masing-Masing Social Media */
+.social-btn.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-btn.tiktok {
+  background-color: #000000;
+  border: 1px solid #333;
+}
+
+.social-btn.facebook {
+  background-color: #1877f2;
+}
+
+.social-btn.bio-link {
+  background-color: #238636;
+}
+
+/* Card Profil Utama */
+.profile-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header-text h3 {
+  font-size: 1.5rem;
+  color: #f0f6fc;
+  margin-bottom: 0.2rem;
+}
+
+.profile-header-text .subtitle {
+  color: #58a6ff;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Card Informasi Biodata */
+.about-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.about-card h3 {
+  font-size: 1.2rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.5rem;
+}
+
+/* Grid Layout Informasi */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.info-item {
+  background-color: #0d1117;
+  padding: 0.9rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #21262d;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.info-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.info-label {
+  color: #8b949e;
+  font-size: 0.825rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  color: #f0f6fc;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
